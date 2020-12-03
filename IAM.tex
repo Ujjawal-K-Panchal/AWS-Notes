@@ -1,0 +1,38 @@
+\chapter{IAM 101: Identity Access Management}
+allows to manage users and their level of access in AWS concole.
+
+\section{Key concepts}
+\begin{itemize}
+	\item Centralized control of AWS account.
+	\item shared access to your AWS account.
+	\item Granular Permissions.
+	\item Identity Federation.
+	\item Multifactor authentication.
+	\item temporary access.
+	\item allows you to set up password rotation policy.
+	\item integrates with different AWS services.
+	\item supports PCI DSS. (Compliant framework for taking credit card details).
+\end{itemize}
+
+\section{Key terminology.}
+\begin{itemize}
+\item Users
+\item Groups (Users belonging to group ingerit properties.)
+\item Policies (Permmissions in JSON files).
+\item Roles (Role that AWS service plays, eg. allowing a VM to modify data in S3).
+\end{itemize}
+
+\section{A Billing Alarm - LAB}
+How to get automatic notifications when bill goes over something.
+To get bill notifications, goto cloud watch, billing alarms and create SNS topic.
+
+\section{Summary}
+\begin{itemize}
+	\item IAM is universal.
+	\item root account is simply created when you first setup your AWS account. It has complete admin access.
+	\item New Users have no permissions when first created.
+	\item New users are assigned access key ID and Secret Access Keys when first created.
+	\item You only get to view them once. So you will need to regenerate them.
+	\item \textbf{Always setup multifactor authentication on root account.}
+	\item ability to create and customize password rotation policy.	
+\end{itemize}
